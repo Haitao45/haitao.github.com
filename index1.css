@@ -1,0 +1,95 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+.services-section {  /*背景*/
+	background: url(../myhtml/img/hq.jpg);
+	background-size: cover;
+	padding: 60px 0;
+}
+.inner-width {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto; 
+	padding: 0 20px;
+	overflow: hidden;
+}
+.section-title {  /*大标题*/
+	text-align: center;
+	color:#f1c40f;
+	text-transform: uppercase;
+	font-size: 30px;
+}
+.border {  /*下横线*/
+	width: 160px;
+	height: 2px;
+	background: #f1c40f;
+	margin: 30px auto;
+}
+.services-container {  /*显示布局*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.service-box {  /*布局大小*/
+	max-width: 33.33%;
+	padding: 30px;
+	text-align: center;
+	color: #ddd;
+	cursor: pointer;
+}
+a {  /*超链接*/
+  color: #e1b12c;
+  text-decoration: none;
+  outline: none;
+}
+   
+.service-icon { /*图标，外框*/
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border: 3px solid /*#ecf0f1*/#e1b12c;
+	color: /*#ecf0f1*/#e1b12c;
+	transform: rotate(45deg);
+	margin-bottom: 30px;
+	margin-top: 16px;
+	transition: 0.3s linear;
+}
+.service-icon i {  /*图标位置矫正*/
+	line-height: 70px;
+	transform: rotate(-45deg);
+	font-size: 26px;
+}
+.service-box:hover .service-icon { /*图标特效*/
+	background: #e1b12c;
+	color: #fff;
+}
+.service-title {  /*小标题*/
+	color: #f1c40f;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.service-desc {  /*内容简介*/
+	color:#f1c40f; 
+	font-size: 14px;
+}
+@media screen and (max-width: 960px) {
+	.service-box {
+		max-width: 45%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.service-box {
+		max-width: 50%;
+	}
+}
+@media screen and (max-width: 480px) {
+	.service-box {
+		max-width: 100%;
+	}
+}
