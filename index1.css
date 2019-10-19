@@ -7,7 +7,7 @@
 }
 
 .services-section {  /*背景*/
-	background: url(../img/hq.jpg);
+	background: url(img/hq.jpg);
 	background-size: cover;
 	padding: 60px 0;
 }
